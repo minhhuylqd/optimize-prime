@@ -11,12 +11,25 @@ datasource db {
 }
 
 model Note {
-  id    String @id @default(auto()) @map("_id") @db.ObjectId
-  title String
-  content String?
-  userId String
+  id       String   @id @default(auto()) @map("_id") @db.ObjectId
+  title    String
+  content  String?
+  userId   String
   createAt DateTime @default(now())
   updateAt DateTime @updatedAt
 
   @@map("notes")
+}
+
+model Web {
+  id     String  @id @default(auto()) @map("_id") @db.ObjectId
+  title  String?
+  url    String
+  userId String
+}
+
+model File {
+  id     String @id @default(auto()) @map("_id") @db.ObjectId
+  name   String
+  userId String
 }
