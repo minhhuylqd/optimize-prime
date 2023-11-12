@@ -18,8 +18,6 @@ async function NotesPage() {
     throw new Error("userId undefined");
   }
 
-  const allNotes = await prisma.note.findMany({ where: { userId } });
-
   const allFiles = await prisma.file.findMany({ where: { userId } });
 
   return (
