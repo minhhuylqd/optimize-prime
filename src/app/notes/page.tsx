@@ -8,7 +8,7 @@ import AddDataBox from "@/components/AddDataBox";
 import FileUpload from "@/components/FileUpload";
 
 export const metadata: Metadata = {
-  title: "Flow Brain - Notes",
+  title: "OP",
 };
 
 async function NotesPage() {
@@ -31,7 +31,7 @@ async function NotesPage() {
           <FileUpload key={file.id} file={file} />
         ))}
       </div>
-      <h2 className="italic text-lg mb-4 font-semibold">Notes</h2>
+      {/* <h2 className="italic text-lg mb-4 font-semibold">Notes</h2>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {allNotes.map((note) => (
           <Note key={note.id} note={note} />
@@ -41,7 +41,7 @@ async function NotesPage() {
             {"You don't have any notes yet."}
           </div>
         )}
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -18,6 +18,7 @@ export default function Navbar() {
             <span className="font-bold">Optimize Prime</span>
           </Link>
           <div className="flex items-center gap-2">
+            <AiChatButton />
             <UserButton
               afterSignOutUrl="/"
               appearance={{
@@ -26,7 +27,6 @@ export default function Navbar() {
                 },
               }}
             />
-            <AiChatButton />
           </div>
         </div>
       </div>

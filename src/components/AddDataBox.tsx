@@ -19,15 +19,15 @@ export default function AddDataBox() {
         <FileText size={20} className="mr-2" />
         Add PDF
       </Button>
-      <Button onClick={() => setShowAddEditNoteDialog(true)}>
+      {/* <Button onClick={() => setShowAddEditNoteDialog(true)}>
         <Pen size={20} className="mr-2" />
         Add Note
-      </Button>
+      </Button> */}
       <AddPdfDialog open={showUploadPdf} setOpen={setShowUploadPdf} />
-      <AddNoteDialog
+      {/* <AddNoteDialog
         open={showAddEditNoteDialog}
         setOpen={setShowAddEditNoteDialog}
-      />
+      /> */}
       {/* <Button onClick={() => setShowAddWebsiteDialog(true)}>
         <Link size={20} className="mr-2" />
         Add Website
