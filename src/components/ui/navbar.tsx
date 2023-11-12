@@ -14,8 +14,8 @@ export default function Navbar() {
       <div className="p-4 shadow">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3">
           <Link href="/notes" className="flex items-center gap-1">
-            <Image src={logo} width={40} height={40} alt="FlowBrain logo" />
-            <span className="font-bold">FlowBrain</span>
+            <Image src={logo} width={40} height={40} alt="OP logo" />
+            <span className="font-bold">Optimize Prime</span>
           </Link>
           <div className="flex items-center gap-2">
             <UserButton

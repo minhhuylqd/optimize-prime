@@ -6,8 +6,8 @@ import { ClerkProvider } from "@clerk/nextjs";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Flow Brain",
-  description: "The intelligent note-taking app for developers.",
+  title: "Optimize Prime",
+  description: "Your entrepreneurial vice-captain.",
 };
 
 export default function RootLayout({
