@@ -30,7 +30,7 @@ export async function POST(req: Request) {
     // console.log(chainResponse)
 
     const question = body.messages[body.messages.length - 1].content;
-    console.log("question from body.messages: " + question);
+    // console.log("question from body.messages: " + question);
 
     const vectorStoreRetriever = vectorStore.asRetriever(10);
 
@@ -90,7 +90,7 @@ export async function POST(req: Request) {
     };
 
     const response = await openai.chat.completions.create({
-      model: "gpt-3.5-turbo",
+      model: "gpt-4",
       stream: true,
       messages: [systemMessage, ...messagesTruncated],
     });
