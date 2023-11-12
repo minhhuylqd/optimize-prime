@@ -1,7 +1,7 @@
 import { CreateNoteSchema, createNoteSchema } from "@/lib/validation/note";
 import { set, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Dialog, DialogContent, DialogFooter, DialogHeader } from "./ui/dialog";
+import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle } from "./ui/dialog";
 import {
   Form,
   FormControl,
@@ -11,7 +11,6 @@ import {
   FormMessage,
 } from "./ui/form";
 import { Input } from "./ui/input";
-import { DialogTitle } from "@radix-ui/react-dialog";
 import { Textarea } from "./ui/textarea";
 import LoadingButton from "./ui/loading-button";
 import { useRouter } from "next/navigation";

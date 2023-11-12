@@ -29,7 +29,7 @@ model Web {
 }
 
 model File {
-  id     String @id @default(auto()) @map("_id") @db.ObjectId
-  name   String
-  userId String
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  filename String
+  userId   String
 }
